@@ -10,8 +10,126 @@
 
 <!-- Font awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Font lato -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+
+<!-- Background color and image -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-col': '#F85559',
+          },
+          backgroundImage: {
+            'slider1-bg': "url('images/banner1.png')",
+            'slider2-bg': "url('images/banner2.png')",
+            'slider3-bg': "url('images/banner3.png')",
+            'slider4-bg': "url('images/banner4.png')",
+            'team-bg': "url('images/team.png')",
+          },
+        },
+      },
+    }
+  </script>
 </head>
-<body>
-    
+<body class="font-lato">
+    <header class="container mx-auto">
+        <nav>
+            <div
+      class="flex justify-between md:justify-around items-center px-9 py-5 lg:bg-primary-col rounded-[500px] mt-10 mb-10">
+      
+
+      <div class="hidden lg:flex flex-1">
+        <ul class="menu menu-horizontal px-1 text-white">
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+
+      <div class="flex md:flex-1 lg:justify-center items-center gap-3 lg:pr-10">
+        <img class="w-10" src="images/logo.png" alt="logo">
+        <h3 class="text-black lg:text-white">Fruit Burst</h3>
+      </div>
+
+      <!-- navbar special item only for medium or Tablet device starts-->
+      <div class="hidden md:flex md:flex-1 lg:hidden  md:justify-center">
+        <input type="text" placeholder="Search here" class="input w-50% input-bordered rounded-full" />
+      </div>
+      <!-- navbar special item only for medium or Tablet device Ends-->
+
+      <div class="flex-1 flex justify-end lg:hidden w-8">
+        <div class=" lg:hidden dropdown">
+            <label tabindex="0" class="btn  btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm  dropdown-content mt-3 z-[1] p-2 shadow bg-[#F85559] rounded-box w-52">
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+        
+      </div>
+
+      <div class="lg:flex-1 hidden lg:flex lg:justify-end">
+        <input type="text" placeholder="Search here" class="relative input lg:w-[75%] input-bordered rounded-full" />
+        <i class="fa-solid fa-magnifying-glass absolute m-4"></i>
+      </div>
+
+    </div>
+        </nav>
+
+        <!-- Banner section -->
+        <div class="bg-opacity-40">
+            <div class="carousel w-full  h-[190px] lg:h-[600px]">
+                <div id="slide1" class="carousel-item relative w-full bg-slider1-bg ">
+                    <div class="lg:ml-[35%] flex flex-col justify-center items-center text-center text-white space-y-6 ">
+                        <h3 class="text-5xl font-extrabold">
+                            Exotic tastes at your <br> doorstep
+                        </h3>
+                        <p class="text-xl">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] text-white border-none">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide4" class="btn btn-circle">❮</a> 
+                      <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+    </header>
 </body>
 </html>
