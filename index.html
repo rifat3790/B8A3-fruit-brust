@@ -30,10 +30,10 @@
             'primary-col': '#F85559',
           },
           backgroundImage: {
-            'slider1-bg': "url('images/banner1.png')",
-            'slider2-bg': "url('images/banner2.png')",
-            'slider3-bg': "url('images/banner3.png')",
-            'slider4-bg': "url('images/banner4.png')",
+            'hero-bg-1': "url('images/banner1.png')",
+            'hero-bg-2': "url('images/banner2.png')",
+            'hero-bg-3': "url('images/banner3.png')",
+            'hero-bg-4': "url('images/banner4.png')",
             'team-bg': "url('images/team.png')",
           },
         },
@@ -59,7 +59,7 @@
 
       <div class="flex md:flex-1 lg:justify-center items-center gap-3 lg:pr-10">
         <img class="w-10" src="images/logo.png" alt="logo">
-        <h3 class="text-black lg:text-white">Fruit Burst</h3>
+        <h3 class="text-black text-4xl lg:text-white">Fruit Burst</h3>
       </div>
 
       <!-- navbar special item only for medium or Tablet device starts-->
@@ -91,44 +91,64 @@
         </nav>
 
         <!-- Banner section -->
-        <div class="bg-opacity-40">
-            <div class="carousel lg:w-full  h-[190px] min-w-fit lg:h-[600px]">
-                <div id="slide1" class="carousel-item relative w-full bg-slider1-bg ">
-                    <div class="lg:ml-[35%] flex flex-col justify-center items-center text-center text-white space-y-6 ">
-                        <h3 class="text-5xl font-extrabold">
-                            Exotic tastes at your <br> doorstep
-                        </h3>
-                        <p class="text-xl">We supply highly quality organic products</p>
-                        <button class="btn bg-[#F85559] text-white border-none">Shop Now</button>
-                    </div>
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                      <a href="#slide4" class="btn btn-circle">❮</a> 
-                      <a href="#slide2" class="btn btn-circle">❯</a>
-                    </div>
-                  </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div>
+        <div class="carousel w-full h-[600px]">
+            <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+            <div id="slide1" class="carousel-item relative w-full bg-hero-bg-1">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
-        </div>
+              <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+           
+                    <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+                    <p>We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559] border-none text-white mt-8">Shop Now</button>
+
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full bg-hero-bg-2">
+             
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+              <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+           
+                <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+                <p>We supply highly quality organic products</p>
+                <button class="btn bg-[#F85559] border-none text-white mt-8">Shop Now</button>
+
+          </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full bg-hero-bg-3">
+            
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+              <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+           
+                <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+                <p>We supply highly quality organic products</p>
+                <button class="btn bg-[#F85559] border-none text-white mt-8">Shop Now</button>
+
+          </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full bg-hero-bg-4">
+             
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+              <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+           
+                <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+                <p>We supply highly quality organic products</p>
+                <button class="btn bg-[#F85559] border-none text-white mt-8">Shop Now</button>
+
+          </div>
+            </div>
+          </div>
 
         <main class="container mx-auto">
             <!-- Deal section -->
@@ -292,6 +312,89 @@
                 <div class="text-center mt-6 lg:mt-12">
                     <button class="btn bg-[#F85559] text-white">Shop All</button>
                 </div>
+            </section>
+
+            <!-- Meet team section -->
+
+            <section class="container mx-auto">
+                <!-- Team header section -->
+                <div class="hero min-h-screen" style="background-image: url('./images/team.png');">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content  text-neutral-content">
+                      <div class="max-w-2xl">
+                        <h1 class="text-center mb-5 text-5xl font-bold">Meet the team section</h1>
+                        <p class=" text-center mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+
+                        <!-- Member details -->
+
+                        <div class="grid gap-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+
+                            <!-- Member 1 -->
+                            <div>
+                                <img src="images/member1.png" alt="">
+
+                                <div class="">
+                                    <h3 class="text-xl font-semibold">Awlad Hossain</h3>
+                                    <p>Fruits Expert</p>
+                                    <div class="">
+                                        <i class="fa-brands fa-facebook" style="color: #f74418;"></i>
+                                        <i class="fa-brands fa-square-twitter" style="color: #e75213;"></i>
+                                        <i class="fa-brands fa-linkedin" style="color: #fd2e17;"></i>
+                                    </div></div>
+                            </div>
+
+                             <!-- Member 2 -->
+                             <div>
+                                <img src="images/member2.png" alt="">
+
+                                <div class="">
+                                    <h3 class="text-xl font-semibold">Safia Chowdhury</h3>
+                                    <p>Fruits Expert</p>
+                                    <div class="">
+                                        <i class="fa-brands fa-facebook" style="color: #f74418;"></i>
+                                        <i class="fa-brands fa-square-twitter" style="color: #e75213;"></i>
+                                        <i class="fa-brands fa-linkedin" style="color: #fd2e17;"></i>
+                                    </div></div>
+                            </div>
+
+                            <!-- Member 3 -->
+                            <div>
+                                <img src="images/member3.png" alt="">
+
+                                <div class="">
+                                    <h3 class="text-xl font-semibold">Rokib Hossain</h3>
+                                    <p>Fruits Expert</p>
+                                    <div class="">
+                                        <i class="fa-brands fa-facebook" style="color: #f74418;"></i>
+                                        <i class="fa-brands fa-square-twitter" style="color: #e75213;"></i>
+                                        <i class="fa-brands fa-linkedin" style="color: #fd2e17;"></i>
+                                    </div></div>
+                            </div>
+
+                             <!-- Member 4 -->
+                             <div>
+                                <img src="images/member4.png" alt="">
+
+                                <div class="relative left-6">
+                                    <h3 class="text-xl font-semibold">Chaity</h3>
+                                    <p>Fruits Expert</p>
+                                    <div class="">
+                                        <i class="fa-brands fa-facebook" style="color: #f74418;"></i>
+                                        <i class="fa-brands fa-square-twitter" style="color: #e75213;"></i>
+                                        <i class="fa-brands fa-linkedin" style="color: #fd2e17;"></i>
+                                    </div></div>
+                            </div>
+        
+                          </div>
+                        
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                  
+
             </section>
 
         </main>
