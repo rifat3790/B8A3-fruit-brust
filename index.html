@@ -28,7 +28,7 @@
       theme: {
         extend: {
           colors: {
-            'primary-col': '#F85559',
+            'primary-colour': '#F85559',
           },
           backgroundImage: {
             'hero-bg-1': "url('images/banner1.png')",
@@ -46,7 +46,7 @@
     <header class="container mx-auto">
         <nav>
             <div
-      class="flex justify-between md:justify-around items-center px-9 py-5 lg:bg-primary-col rounded-[500px] mt-10 mb-10">
+      class="flex justify-between md:justify-around items-center px-9 py-5 lg:bg-primary-colour rounded-[500px] mt-10 mb-10">
       
 
       <div class="hidden lg:flex flex-1">
@@ -84,7 +84,7 @@
         
       </div>
 
-      <div class="lg:flex-1 hidden lg:flex lg:justify-end">
+      <div class="hidden lg:flex-1 lg:flex lg:justify-end">
         <input type="text" placeholder="Search here" class="relative input lg:w-[75%] input-bordered rounded-full" />
         <i class="fa-solid fa-magnifying-glass absolute m-4"></i>
       </div>
@@ -93,87 +93,89 @@
         </nav>
 
         <!-- Banner section -->
+       <div class="container mx-auto w-[1440px] min-h-[calc(100vh-64px)]">
         <div class="carousel w-full h-[600px]">
-            <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
-            <div id="slide1" class="carousel-item relative w-full bg-hero-bg-1">
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-              <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
-           
-                    <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
-                    <p>We supply highly quality organic products</p>
-                    <button class="btn bg-[#F85559] border-none text-white mt-8">Shop Now</button>
-
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full bg-hero-bg-2">
-             
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-              <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
-           
-                <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
-                <p>We supply highly quality organic products</p>
-                <button class="btn bg-[#F85559] border-none text-white mt-8">Shop Now</button>
-
-          </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full bg-hero-bg-3">
-            
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-              <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
-           
-                <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
-                <p>We supply highly quality organic products</p>
-                <button class="btn bg-[#F85559] border-none text-white mt-8">Shop Now</button>
-
-          </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full bg-hero-bg-4">
-             
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
-              <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
-           
-                <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
-                <p>We supply highly quality organic products</p>
-                <button class="btn bg-[#F85559] border-none text-white mt-8">Shop Now</button>
-
-          </div>
+          <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+          <div id="slide1" class="carousel-item relative w-full bg-hero-bg-1 bg-no-repeat">
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
+            <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+         
+                  <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+                  <p>We supply highly quality organic products</p>
+                  <button class="btn bg-[#F85559] border-none text-white mt-8">Shop Now</button>
+
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full bg-hero-bg-2 bg-no-repeat	">
+           
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+            <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+         
+              <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+              <p>We supply highly quality organic products</p>
+              <button class="btn bg-[#F85559] border-none text-white mt-8">Shop Now</button>
+
+        </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full bg-hero-bg-3 bg-no-repeat	">
+          
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+            <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+         
+              <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+              <p>We supply highly quality organic products</p>
+              <button class="btn bg-[#F85559] border-none text-white mt-8">Shop Now</button>
+
+        </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full bg-hero-bg-4 bg-no-repeat	">
+           
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+            <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+         
+              <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+              <p>We supply highly quality organic products</p>
+              <button class="btn bg-[#F85559] border-none text-white mt-8">Shop Now</button>
+
+        </div>
           </div>
+        </div>
+       </div>
 
           <!-- Relative position -->
           <section
           class="hidden text-black md:w-[100%] lg:w-[80%] lg:mx-auto md:flex flex-row gap-4 p-8 rounded-lg drop-shadow-lg bg-[#FFFFFF] lg:-m-28 ">
-          <div class="flex-1 text-center flex flex-col space-y-4 justify-center items-center">
-            <img src="images/fruit1.png" alt="fruit1">
-            <p>Grapes</p>
+          <div class="flex-1 text-center justify-center items-center flex flex-col space-y-4 ">
+            <img src="images/fruit1.png" alt="">
+            <p>Strawberry</p>
           </div>
           <div class="flex-1 text-center flex flex-col space-y-4 justify-center items-center">
-            <img src="images/fruit2.png" alt="fruit2">
+            <img src="images/fruit2.png" alt="">
             <p>Orange</p>
           </div>
           <div class="flex-1 text-center flex flex-col space-y-4 justify-center items-center">
-            <img src="images/fruit3.png" alt="fruit3">
+            <img src="images/fruit3.png" alt="">
             <p>Mango</p>
           </div>
           <div class="flex-1 text-center flex flex-col space-y-4 justify-center items-center">
-            <img src="images/fruit4.png" alt="fruit4">
+            <img src="images/fruit4.png" alt="">
             <p>Strawberry</p>
           </div>
           <div class="flex-1 text-center flex flex-col space-y-4 justify-center items-center">
             <img src="images/fruit5.png" alt="fruit5">
-            <p>Pomegrenate</p>
+            <p>Mango</p>
           </div>
         </section>
     </header>
@@ -181,7 +183,7 @@
     <!-- Main section starts -->
     <main class="container mx-auto">
       <!-- Deal section -->
-      <section class="mt-44 my-24">
+      <section class="my-8 md:mt-40 lg:mt-48 lg:my-24">
           <div class="flex flex-col lg:flex-row items-center justify-between">
               <div>
                   <h2 class="text-5xl font-bold mb-5">Deal of the day</h2>
@@ -193,19 +195,20 @@
                   <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                       <div class="flex flex-col">
                         <span class="countdown font-mono text-5xl">
-                          <span style="--value:15;"></span>
+                          <span style="--value:15; "></span>:
                         </span>
+                        
                         Days
                       </div> 
                       <div class="flex flex-col">
                         <span class="countdown font-mono text-5xl">
-                          <span style="--value:10;"></span>
+                          <span style="--value:10;"></span>:
                         </span>
                         Hours
                       </div> 
                       <div class="flex flex-col">
                         <span class="countdown font-mono text-5xl">
-                          <span style="--value:24;"></span>
+                          <span style="--value:24;"></span>:
                         </span>
                         Minutes
                       </div> 
@@ -220,7 +223,7 @@
           </div>
 
           <!-- card container -->
-          <div class="grid gap-4 md:gap-5 lg:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+          <div class="mt-4 grid gap-4 md:gap-5 lg:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
               <!-- card 1 -->
               <div class="card bg-[#FFFFFF] border border-solid border-b-slate-400">
                   <figure class="px-10 pt-10">
@@ -503,7 +506,7 @@
                   <p class=" text-center mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
 
-                  <!-- Member details -->
+                  <!-- Team Member details -->
 
                   <div class="max-w-3xl">
                     <div class="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between ">
@@ -518,7 +521,7 @@
                           <i class="fa-brands fa-linkedin" style="color: #f90b0b;"></i>
                         </div>
                       </div>
-                      <!-- member-1 Ends -->
+                      
         
                       <!-- member-2 start -->
                       <div class="flex flex-col md:flex-row">
@@ -533,7 +536,7 @@
                           </div>
                         </div>
                       </div>
-                      <!-- member-2 Ends -->
+                      
         
                       <!-- member-3 start -->
                       <div class="flex flex-col md:flex-row">
@@ -548,7 +551,7 @@
                           </div>
                         </div>
                       </div>
-                      <!-- member-3 Ends -->
+                      
         
                       <!-- member-4 start -->
                       <div class="flex flex-col md:flex-row">
@@ -563,7 +566,7 @@
                           </div>
                         </div>
                       </div>
-                      <!-- member-4 Ends -->
+                      
                     </div>
   
                     </div>
@@ -591,12 +594,14 @@
         </div>
   
         <div class="flex flex-col lg:flex-row items-center gap-5 mt-6">
-          <!-- Special item for mobile responsive start -->
+          
+          <!-- Only mobile device photo -->
           <img class="block lg:hidden" src="images/whychoose1.png" alt="">
-          <!-- Special item for mobile responsive Ends -->
+          
   
-          <!-- Left Side Items -->
-          <div class="flex flex-col justify-center lg:justify-start space-y-6 text-center lg:text-left">
+          <!-- Left Side -->
+          <div class="flex flex-col justify-center
+          md:justify-start lg:justify-start space-y-6 text-center md:text-left lg:text-left">
             <!-- Left side item-1 Start -->
             <div class="flex flex-col lg:flex-row gap-2 items-center lg:items-start">
               <div class="w-24 h-12 bg-[#12121219] rounded-3xl flex justify-center items-center ">
@@ -613,7 +618,7 @@
                 </p>
               </div>
             </div>
-            <!-- Left side item-1 Ends -->
+            
             <!-- Left side item-2 Start -->
             <div class="flex flex-col lg:flex-row gap-2 items-center lg:items-start">
               <div class="w-24 h-12 bg-[#12121219] rounded-3xl flex justify-center items-center">
@@ -718,7 +723,7 @@
       <img src="images/logo.png" alt="">
         <h3 class="text-4xl font-semibold text-white">Fruit Burst</h3>
     </div>
-    <div class="grid grid-cols-4 lg:grid-cols-6 gap-4 text-white">
+    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 text-white">
     <a class="link link-hover">Home</a>  
       <a class="link link-hover">About us</a> 
       <a class="link link-hover">Shop</a> 
